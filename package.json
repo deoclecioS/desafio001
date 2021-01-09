@@ -1,0 +1,25 @@
+{
+  "name": "desafioagilizei_001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rimraf mochawesome-report full_report.json cypress/reports/cucumber-json/**"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chance": "^1.1.7",
+    "cypress": "^5.6.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}
