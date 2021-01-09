@@ -36,10 +36,10 @@ jobs:
     - run: npm install
     
     # executar os testes usando o cucumber
-    - run: npm run cy:run:cucumber
+    - run: npm run cypress:run
     
     # gerar o relatorio em html
-    - run: npm run report:cucumber
+    - run: npm run report:merge
     
     # publicar relatorio em html
     - name: Deploy to GithubPages
